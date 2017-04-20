@@ -6,6 +6,7 @@ result_dict = {}
 fileName_ls = os.listdir(dir_path)
 for fileName in fileName_ls:
 
+
     filePath = os.path.join(dir_path, fileName)
     with gzip.open(filePath, 'rb') as data:
         count = len(data.readlines())
